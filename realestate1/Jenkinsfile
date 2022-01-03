@@ -2,7 +2,7 @@ pipeline {
     agent any
     tools {
          maven 'maven3'
-         def pomfilepath= <pom.xml /realestate1>
+         def pomfilepath= pom.xml /realestate1
     }
     stages{
         stage('Build'){
