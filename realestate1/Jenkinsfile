@@ -2,12 +2,13 @@ pipeline {
     agent any
     tools {
          maven 'maven3'
-         def pomfilepath= pom.xml /realestate1
+        
     }
     stages{
         stage('Build'){
             steps{
-                  sh script: 'mvn clean package'
+                def pomfilepath= pom.xml /realestate1  
+                sh script: 'mvn clean package'
             }
         }
     }
