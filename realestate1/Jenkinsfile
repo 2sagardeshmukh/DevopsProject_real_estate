@@ -7,8 +7,8 @@ pipeline {
     stages{
         stage('Build'){
             steps{
-                def pomfilepath= pom.xml /realestate1  
                 sh script: 'mvn clean package'
+                def pomfilepath= pom.xml /realestate1
             }
         }
     }
